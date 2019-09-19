@@ -1,12 +1,9 @@
-name: Java CI
-
+name: Scope Gradle JDK v1.8
 on: [push]
 
 jobs:
-  build:
-
+  scope:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check if SCOPE_APIKEY is set
         run: if [ "${{secrets.SCOPE_APIKEY}}" = "" ]; then exit 1; fi
