@@ -64,5 +64,5 @@ For further information about how to install Scope, go to [Scope Java Agent Inst
 8. Click on `Actions` button and access to the workflow.
 9. Click on `Re-run checks`.
 
-Once GitHub Workflow had finished, you can check the test executions report on [app.scope.dev](https://app.scope.dev)
+Once GitHub Workflow has finished, you can check the test executions report on [app.scope.dev](https://app.scope.dev)
 
