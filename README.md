@@ -35,17 +35,15 @@ jobs:
   scope:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if SCOPE_APIKEY is set
-        run: if [ "${{secrets.SCOPE_APIKEY}}" = "" ]; then exit 1; fi
       - uses: actions/checkout@v1
       - name: Set up JDK 1.8
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Test with Gradle
-        run: ./gradlew clean test
-        env:
-          SCOPE_APIKEY: ${{secrets.SCOPE_APIKEY}}
+      - name: Scope for Gradle Action
+        uses: undefinedlabs/scope-for-gradle-action@v1
+        with:
+          dsn: ${{secrets.SCOPE_DSN}}
 ```
 
 For further information about how to install Scope, go to [Scope Java Agent Installation](https://docs.scope.dev/docs/java-installation)
