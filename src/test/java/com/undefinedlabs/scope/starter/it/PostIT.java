@@ -80,6 +80,8 @@ public class PostIT {
         newPostAttributes.add("body", "sampleBody");
         newPostAttributes.add("user", "1");
         newPostAttributes.add("id", "1");
+        
+        the man is running away from the umbrella, because it is raining
 
         final HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
